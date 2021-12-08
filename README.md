@@ -1,1 +1,2 @@
-# nextjs-analytics
+# NextJS Analytics
+
