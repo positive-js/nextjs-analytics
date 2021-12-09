@@ -1,4 +1,10 @@
 {
+    "typedocOptions": {
+        "entryPoints": [
+            "src/index.ts"
+        ],
+        "out": "docs"
+    },
     "compilerOptions": {
         "target": "es6",
         "lib": [
@@ -15,6 +21,7 @@
         "module": "esnext",
         "moduleResolution": "node",
         "esModuleInterop": true,
+        "strictPropertyInitialization": false,
         "jsx": "react",
         "baseUrl": ".",
     },
@@ -22,6 +29,6 @@
         "node_modules"
     ],
     "include": [
-        "./src"
+        "src"
     ]
 }
