@@ -1,4 +1,4 @@
-import { YMType } from '../types/ym';
+import { YMType } from '../types';
 import { isDOM } from '../utils';
 
 
@@ -6,7 +6,7 @@ export class YandexMetrika {
     private isInitialized: boolean = false;
     private _tracker: YMType;
 
-    init(counterId: string) {
+    initialize(counterId: string) {
         if (this.isInitialized || !isDOM()) {
             return;
         }

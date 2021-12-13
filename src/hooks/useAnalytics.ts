@@ -13,7 +13,7 @@ export const useAnalytics = (options: { yandexCounterId: string } = {
 
         const yandexMetrika = new YandexMetrika();
 
-        yandexMetrika.init(options.yandexCounterId);
+        yandexMetrika.initialize(options.yandexCounterId);
         yandexMetrika.trackPageView();
-    });
+    }, []);
 };
