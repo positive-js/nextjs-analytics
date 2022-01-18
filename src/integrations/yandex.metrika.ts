@@ -1,9 +1,8 @@
 import { YMType } from '../types';
 import { isDOM } from '../utils';
 
-
 export class YandexMetrika {
-    private isInitialized: boolean = false;
+    private isInitialized = false;
     private _tracker: YMType;
 
     initialize(counterId: string) {
@@ -21,7 +20,7 @@ export class YandexMetrika {
     trackPageView() {
         this.tracker.hit(window.location.href, {
             referer: document.referrer,
-            title: document.title,
+            title: document.title
         });
     }
 
@@ -29,7 +28,7 @@ export class YandexMetrika {
         return this._tracker;
     }
 
-    private appendYMScript():void {
+    private appendYMScript(): void {
         const script = document.createElement('script');
         script.async = true;
         script.src = 'https://mc.yandex.ru/metrika/tag.js';
@@ -46,7 +45,7 @@ export class YandexMetrika {
 
         const ym = () => {
             dataLayer.push(arguments);
-        }
+        };
 
         ym.a = dataLayer;
         ym.l = new Date().valueOf();
@@ -72,7 +71,7 @@ export class YandexMetrika {
                 ym(counterId, 'extLink', ...args);
             },
             hit(...args) {
-                ym(counterId, 'hit', ...args)
+                ym(counterId, 'hit', ...args);
             },
             file(...args) {
                 ym(counterId, 'file', ...args);
