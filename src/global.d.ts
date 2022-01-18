@@ -1,4 +1,4 @@
-import { YMFunc } from './types/ym';
+import { YMFunc } from './types';
 
 
 declare global {

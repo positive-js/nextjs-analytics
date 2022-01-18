@@ -73,6 +73,30 @@ export class YandexMetrika {
             },
             hit(...args) {
                 ym(counterId, 'hit', ...args)
+            },
+            file(...args) {
+                ym(counterId, 'file', ...args);
+            },
+            getClientID(...args) {
+                ym(counterId, 'getClientID', ...args);
+            },
+            notBounce(...args) {
+                ym(counterId, 'notBounce', ...args);
+            },
+            params(...args) {
+                ym(counterId, 'params', ...args);
+            },
+            reachGoal(...args) {
+                ym(counterId, 'reachGoal', ...args);
+            },
+            replacePhones(...args) {
+                ym(counterId, 'replacePhones', ...args);
+            },
+            setUserID(...args) {
+                ym(counterId, 'setUserID', ...args);
+            },
+            userParams(...args) {
+                ym(counterId, 'userParams', ...args);
             }
         };
     }
