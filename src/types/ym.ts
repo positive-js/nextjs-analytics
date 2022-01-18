@@ -1,3 +1,8 @@
+
+export type Options = {
+    counterIDs?: { };
+};
+
 export type YMFunc = {
     (counterId: string, event: string, ...args: Array<unknown>): void;
 
