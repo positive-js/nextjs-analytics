@@ -1,16 +1,11 @@
 {
     "typedocOptions": {
-        "entryPoints": [
-            "src/index.ts"
-        ],
+        "entryPoints": ["src/index.ts"],
         "out": "docs"
     },
     "compilerOptions": {
         "target": "es6",
-        "lib": [
-            "dom",
-            "esnext"
-        ],
+        "lib": ["dom", "esnext"],
         "declaration": true,
         "sourceMap": true,
         "skipLibCheck": true,
@@ -23,12 +18,8 @@
         "esModuleInterop": true,
         "strictPropertyInitialization": false,
         "jsx": "react",
-        "baseUrl": ".",
+        "baseUrl": "."
     },
-    "exclude": [
-        "node_modules"
-    ],
-    "include": [
-        "src"
-    ]
+    "exclude": ["node_modules"],
+    "include": ["src"]
 }

@@ -1,6 +1,5 @@
-
 export type Options = {
-    counterIDs?: { };
+    counterIDs?: {};
 };
 
 export type YMFunc = {

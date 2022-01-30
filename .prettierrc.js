@@ -1,5 +1,7 @@
 module.exports = {
-    endOfLine: 'auto',
     singleQuote: true,
-    trailingComma: false
-}
+    trailingComma: 'none',
+    quoteProps: 'preserve',
+    embeddedLanguageFormatting: 'off',
+    printWidth: 120
+};
